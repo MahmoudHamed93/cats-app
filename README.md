@@ -1,21 +1,21 @@
 # cats-app
 
- Clone This Repo 
+ ### Clone This Repo 
 
- Open the termianl And : 
+ ### Open the termianl And : 
 
-1- yarn
+- yarn
 
-2- cd ios
+- cd ios
 
-3- pod install
+- pod install
 
-4- cd ..
+- cd ..
 
-5- react-native run-ios
+- react-native run-ios
 
-# To Run the tests 
+### To Run the tests 
 
-1- detox build
+- detox build
 
-2- detox test
+- detox test
