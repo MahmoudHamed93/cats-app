@@ -13,6 +13,7 @@ const SearchComp = props => {
     <View style={styles.searchSection}>
       <TextInput
         style={styles.input}
+        testID={'Search-Bar'}
         placeholder="User Nickname"
         onChangeText={searchString => {
           setText(searchString);
@@ -20,7 +21,7 @@ const SearchComp = props => {
         value={text}
         underlineColorAndroid="transparent"
       />
-      <TouchableOpacity onPress={() => props.onSearchClick(text)}>
+      <TouchableOpacity testID={'Search-Button'} onPress={() => props.onSearchClick(text)}>
         <Text style={styles.textStyles}>Search</Text>
       </TouchableOpacity>
     </View>

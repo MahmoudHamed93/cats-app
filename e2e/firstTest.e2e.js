@@ -17,6 +17,19 @@ describe('Example', () => {
     await element(by.id('back-Button')).tap();
   });
 
+  it('Check If Search is working', async () => {
+    await expect(element(by.id('Search-Bar'))).toBeVisible();
+    await element(by.id('Search-Bar')).typeText('Mahmoud')
+    await expect(element(by.id('Search-Button'))).toBeVisible();
+    await element(by.id('Search-Button')).tap();
+    await waitFor(element(by.id('Cat-Button-0'))).not.toBeVisible();
+    await element(by.id('Search-Bar')).clearText()
+    await element(by.id('Search-Bar')).typeText('Short')
+    await element(by.id('Search-Button')).tap();
+    await waitFor(element(by.id('Cat-Button-0'))).toBeVisible();
+    await waitFor(element(by.id('Cat-Button-1'))).toBeVisible();
+  });
+
   it('Check If URL Link Works', async () => {
     await expect(element(by.id('Cat-Button-0'))).toBeVisible();
     await element(by.id('Cat-Button-0')).tap();
