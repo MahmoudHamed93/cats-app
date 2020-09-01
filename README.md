@@ -23,7 +23,7 @@
 
 ``` detox test --c ios```
 
-#Android : 
+# Android : 
 
 - The Test was done on ```Nexus_5X_API_28_x86``` if you have any other emulators, please change it to the emulator name you have in the .detoxrc.json in the root file
 
