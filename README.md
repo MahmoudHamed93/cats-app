@@ -2,20 +2,20 @@
 
  ### Clone This Repo 
 
- ### Open the termianl And : 
+- Open the termianl And : 
 
-- yarn
+``` yarn ```
 
-- cd ios
+``` cd ios ```
 
-- pod install
+``` pod install```
 
-- cd ..
+``` cd ..```
 
-- react-native run-ios
+``` react-native run-ios```
 
 ### To Run the tests 
 
-- detox build
+``` detox build```
 
-- detox test
+``` detox test```
